@@ -10,7 +10,7 @@ const PORT = process.env.PORT || 3000;
 const app = express();
 
 app.use(cors());
-app.use(express.static("src"));
+app.use(express.static("public"));
 
 const url = "https://www.theguardian.com/uk";
 
