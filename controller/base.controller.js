@@ -1,7 +1,8 @@
-const path = require("path");
+const articlesController = require("../controller/articles.controller");
 
-function getHomePage(req, res) {
-    res.sendFile(path.join(__dirname + "/index.html"));
+async function getHomePage(req, res) {
+    const articles = await articlesController.getArticles();
+    res.render("index", { articles: articles });
 }
 
 module.exports = {

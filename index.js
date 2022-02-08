@@ -12,6 +12,9 @@ const articlesRoute = require("./routes/articles.route");
 app.use(cors());
 app.use(express.static("public"));
 
+app.set("view engine", "ejs");
+app.set("views", "views");
+
 app.use("/", baseRoute);
 app.use("/articles", articlesRoute);
 

@@ -5,13 +5,20 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <script src="https://cdn.tailwindcss.com"></script>
-        <script src="/app.js" defer></script>
         <title>The Guardian Scrapper - Articles</title>
     </head>
     <body class="bg-gray-200">
         <div class="m-4">
-            <h1 class="text-center font-bold text-3xl my-8">Articles</h1>
-            <div id="feed" class="flex justify-center flex-wrap gap-4"></div>
+            <h1 class="text-center font-bold text-3xl my-8">
+                The Guardian UK - Articles
+            </h1>
+            <div id="feed" class="flex justify-center flex-wrap gap-4">
+                <% for(article of articles) { %>
+                <!-- Loop for all articles -->
+                <%- include("news-card", { article }) %>
+                <!-- Loop ends -->
+                <% } %>
+            </div>
         </div>
         <footer class="w-full text-center p-4 bg-blue-600 text-white">
             <p>
