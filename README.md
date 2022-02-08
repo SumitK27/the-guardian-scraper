@@ -2,16 +2,18 @@
 
 A node project that retrieves all news stories from [The Guardian UK](https://www.theguardian.com/uk), displays them in a human-readable style, and offers an API in addition to a bespoke web scraper.
 
+[Demo Link](https://jolly-kit-bull.cyclic.app/)
+
+## **Preview**
+
+![Preview](./images/preview.png)
+
 ## **Packages Used**
 
 -   **Express** - Setting up HTTP server
 -   **Axios** - For sending HTTP requests
 -   **Cheerio** - Web Scraping Library
 -   **Cors** - Handling Cross Origin Requests
-
-## **Preview**
-
-![Preview](./images/preview.png)
 
 ## **How to Use**
 
