@@ -38,7 +38,7 @@ app.get("/articles", (req, res) => {
                     .find("source")?.length;
                 let image =
                     $(this).find(".responsive-img").attr("src") ||
-                    "http://www.fsxaddons.com/static/img/no-preview.jpg";
+                    "./no-preview.jpg";
 
                 articles.push({
                     title,
