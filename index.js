@@ -31,7 +31,11 @@ app.get("/articles", (req, res) => {
                     .trim()
                     .split(0, 150);
                 let url = $(this).find("a").attr("href");
-                let description = $(this).find("a").text().substring(0, 250);
+                let description = $(this)
+                    .find("a")
+                    .text()
+                    .replace(title, "")
+                    .substring(0, 250);
                 let no_of_images = $(this)
                     .find(".fc-item__media-wrapper")
                     .find("picture")
