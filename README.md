@@ -2,7 +2,7 @@
 
 A node project that retrieves all news stories from [The Guardian UK](https://www.theguardian.com/uk), displays them in a human-readable style, and offers an API in addition to a bespoke web scraper.
 
-[Demo Link](https://the-guardian-scraper.cyclic.app//)
+[Demo Link](https://the-guardian-scraper.cyclic.app/)
 
 ## **Preview**
 
